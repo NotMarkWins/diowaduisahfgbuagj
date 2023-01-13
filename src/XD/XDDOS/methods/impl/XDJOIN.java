@@ -26,7 +26,7 @@ public class XDJOIN
 
   public void accept(Channel channel, ProxyLoader.Proxy proxy) {
     channel.writeAndFlush(Unpooled.buffer().writeBytes(this.bytes));
-    channel.writeAndFlush(Unpooled.buffer().writeBytes((new LoginRequest((new SecureRandom()).nextInt(999999999)+"_XD")).getWrappedPacket()));
+    channel.writeAndFlush(Unpooled.buffer().writeBytes((new LoginRequest((new SecureRandom()).nextInt(999999999)+"_NmwBoot")).getWrappedPacket()));
     NettyBootstrap.integer++;
     NettyBootstrap.totalConnections++;
   }
